@@ -51,6 +51,19 @@ function CalculateResult() {
   an Aston Martin Vanquish`;
 }
 
+// Getting references to the audio clip and button which activates it
+var audio = new Audio("audio/aston_martin_sound.mp3");
+var audioButton = document.getElementById("audioButton");
+
+audioButton.addEventListener("click", PlayAudio);
+
+function PlayAudio() {
+  console.log("audio");
+  audio.play();
+}
+
+
+
 // quiz variables
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
@@ -291,14 +304,4 @@ span.onclick = function() {
   modal.style.display = "none";
 };
 
-// Getting references to the audio clip and button which activates it
-const audio = new Audio("audio/aston_martin_sound.mp3");
-const buttons = document.querySelector("audioButton");
-
-// on click event
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    audio.play();
-  });
-});
 
