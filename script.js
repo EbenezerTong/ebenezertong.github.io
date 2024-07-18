@@ -55,6 +55,8 @@ function CalculateResult() {
 var audio = new Audio("audio/aston_martin_sound.mp3");
 var audioButton = document.getElementById("audioButton");
 
+console.log(audioButton);
+
 function PlayAudio() {
   console.log("audio");
   audio.play();
