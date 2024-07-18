@@ -81,7 +81,7 @@ startButton.addEventListener("click", StartGame);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   SetNextQuestion();
-})
+});
 
 // starting the quiz
 function StartGame() {
@@ -111,7 +111,7 @@ question.answers.forEach(answer => {
   }
   button.addEventListener("click", SelectAnswer);
   answerButtonsElement.appendChild(button);
-})
+});
 }
 
 // resetting the state, which is called everytime the next question button is pressed
@@ -205,7 +205,7 @@ const questions = [
       {text: "Late 2013", correct: true}
     ]
   }
-]
+];
 
 // Get the modal
 var modal = document.getElementById("modal1");
