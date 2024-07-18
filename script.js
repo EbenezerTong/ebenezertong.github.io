@@ -53,7 +53,7 @@ function CalculateResult() {
 
 // Getting references to the audio clip and button which activates it
 const audio = new Audio("https://github.com/EbenezerTong/ebenezertong.github.io/raw/main/audio/aston_martin_sound.mp3");
-const buttons = document.getElementById("audioButton");
+const audioButton = document.getElementById("audioButton");
 
 
 function PlayAudio() {
