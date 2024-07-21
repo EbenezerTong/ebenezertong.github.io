@@ -137,6 +137,11 @@
         width: 100%;
     }
 
+    #QR {
+        width: 20%;
+    }
+
+
     p { /* paragraps */
         font-size: 19px;
     }
@@ -583,6 +588,10 @@
 
     #thecarDBSback {
         width: 66%;
+    }
+
+    #QR {
+        width: 20%;
     }
 
     p {
